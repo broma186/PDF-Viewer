@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12F9B50F19D1439600B961DE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F9B50E19D1439600B961DE /* Cocoa.framework */; };
+		12F9B51919D1439700B961DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12F9B51719D1439700B961DE /* InfoPlist.strings */; };
+		12F9B51B19D1439700B961DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F9B51A19D1439700B961DE /* main.m */; };
+		12F9B51F19D1439700B961DE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 12F9B51D19D1439700B961DE /* Credits.rtf */; };
+		12F9B52219D1439700B961DE /* NSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F9B52119D1439700B961DE /* NSAppDelegate.m */; };
+		12F9B52519D1439700B961DE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F9B52319D1439700B961DE /* MainMenu.xib */; };
+		12F9B52719D1439700B961DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F9B52619D1439700B961DE /* Images.xcassets */; };
+		12F9B52E19D1439700B961DE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F9B52D19D1439700B961DE /* XCTest.framework */; };
+		12F9B52F19D1439700B961DE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F9B50E19D1439600B961DE /* Cocoa.framework */; };
+		12F9B53719D1439700B961DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12F9B53519D1439700B961DE /* InfoPlist.strings */; };
+		12F9B53919D1439700B961DE /* Assignment_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F9B53819D1439700B961DE /* Assignment_2Tests.m */; };
+		12F9B54319D143C700B961DE /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F9B54219D143C700B961DE /* Quartz.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12F9B53019D1439700B961DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12F9B50319D1439600B961DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12F9B50A19D1439600B961DE;
+			remoteInfo = "Assignment 2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12F9B50B19D1439600B961DE /* ULTIMATE PDF VIEWER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ULTIMATE PDF VIEWER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12F9B50E19D1439600B961DE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		12F9B51119D1439700B961DE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		12F9B51219D1439700B961DE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		12F9B51319D1439700B961DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		12F9B51619D1439700B961DE /* ULTIMATE PDF VIEWER-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ULTIMATE PDF VIEWER-Info.plist"; sourceTree = "<group>"; };
+		12F9B51819D1439700B961DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12F9B51A19D1439700B961DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12F9B51C19D1439700B961DE /* ULTIMATE PDF VIEWER-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ULTIMATE PDF VIEWER-Prefix.pch"; sourceTree = "<group>"; };
+		12F9B51E19D1439700B961DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		12F9B52019D1439700B961DE /* NSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSAppDelegate.h; sourceTree = "<group>"; };
+		12F9B52119D1439700B961DE /* NSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAppDelegate.m; sourceTree = "<group>"; };
+		12F9B52419D1439700B961DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		12F9B52619D1439700B961DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		12F9B52C19D1439700B961DE /* ULTIMATE PDF VIEWERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ULTIMATE PDF VIEWERTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12F9B52D19D1439700B961DE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		12F9B53419D1439700B961DE /* ULTIMATE PDF VIEWERTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ULTIMATE PDF VIEWERTests-Info.plist"; sourceTree = "<group>"; };
+		12F9B53619D1439700B961DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12F9B53819D1439700B961DE /* Assignment_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment_2Tests.m; sourceTree = "<group>"; };
+		12F9B54219D143C700B961DE /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12F9B50819D1439600B961DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F9B54319D143C700B961DE /* Quartz.framework in Frameworks */,
+				12F9B50F19D1439600B961DE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F9B52919D1439700B961DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F9B52F19D1439700B961DE /* Cocoa.framework in Frameworks */,
+				12F9B52E19D1439700B961DE /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12F9B50219D1439600B961DE = {
+			isa = PBXGroup;
+			children = (
+				12F9B51419D1439700B961DE /* Assignment 2 */,
+				12F9B53219D1439700B961DE /* Assignment 2Tests */,
+				12F9B50D19D1439600B961DE /* Frameworks */,
+				12F9B50C19D1439600B961DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12F9B50C19D1439600B961DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12F9B50B19D1439600B961DE /* ULTIMATE PDF VIEWER.app */,
+				12F9B52C19D1439700B961DE /* ULTIMATE PDF VIEWERTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12F9B50D19D1439600B961DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12F9B54219D143C700B961DE /* Quartz.framework */,
+				12F9B50E19D1439600B961DE /* Cocoa.framework */,
+				12F9B52D19D1439700B961DE /* XCTest.framework */,
+				12F9B51019D1439700B961DE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12F9B51019D1439700B961DE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12F9B51119D1439700B961DE /* AppKit.framework */,
+				12F9B51219D1439700B961DE /* CoreData.framework */,
+				12F9B51319D1439700B961DE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		12F9B51419D1439700B961DE /* Assignment 2 */ = {
+			isa = PBXGroup;
+			children = (
+				12F9B52019D1439700B961DE /* NSAppDelegate.h */,
+				12F9B52119D1439700B961DE /* NSAppDelegate.m */,
+				12F9B52319D1439700B961DE /* MainMenu.xib */,
+				12F9B52619D1439700B961DE /* Images.xcassets */,
+				12F9B51519D1439700B961DE /* Supporting Files */,
+			);
+			path = "Assignment 2";
+			sourceTree = "<group>";
+		};
+		12F9B51519D1439700B961DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12F9B51619D1439700B961DE /* ULTIMATE PDF VIEWER-Info.plist */,
+				12F9B51719D1439700B961DE /* InfoPlist.strings */,
+				12F9B51A19D1439700B961DE /* main.m */,
+				12F9B51C19D1439700B961DE /* ULTIMATE PDF VIEWER-Prefix.pch */,
+				12F9B51D19D1439700B961DE /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12F9B53219D1439700B961DE /* Assignment 2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				12F9B53819D1439700B961DE /* Assignment_2Tests.m */,
+				12F9B53319D1439700B961DE /* Supporting Files */,
+			);
+			path = "Assignment 2Tests";
+			sourceTree = "<group>";
+		};
+		12F9B53319D1439700B961DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12F9B53419D1439700B961DE /* ULTIMATE PDF VIEWERTests-Info.plist */,
+				12F9B53519D1439700B961DE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12F9B50A19D1439600B961DE /* ULTIMATE PDF VIEWER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12F9B53C19D1439700B961DE /* Build configuration list for PBXNativeTarget "ULTIMATE PDF VIEWER" */;
+			buildPhases = (
+				12F9B50719D1439600B961DE /* Sources */,
+				12F9B50819D1439600B961DE /* Frameworks */,
+				12F9B50919D1439600B961DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ULTIMATE PDF VIEWER";
+			productName = "Assignment 2";
+			productReference = 12F9B50B19D1439600B961DE /* ULTIMATE PDF VIEWER.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12F9B52B19D1439700B961DE /* ULTIMATE PDF VIEWERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12F9B53F19D1439700B961DE /* Build configuration list for PBXNativeTarget "ULTIMATE PDF VIEWERTests" */;
+			buildPhases = (
+				12F9B52819D1439700B961DE /* Sources */,
+				12F9B52919D1439700B961DE /* Frameworks */,
+				12F9B52A19D1439700B961DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12F9B53119D1439700B961DE /* PBXTargetDependency */,
+			);
+			name = "ULTIMATE PDF VIEWERTests";
+			productName = "Assignment 2Tests";
+			productReference = 12F9B52C19D1439700B961DE /* ULTIMATE PDF VIEWERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12F9B50319D1439600B961DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Matthew Brooker";
+				TargetAttributes = {
+					12F9B52B19D1439700B961DE = {
+						TestTargetID = 12F9B50A19D1439600B961DE;
+					};
+				};
+			};
+			buildConfigurationList = 12F9B50619D1439600B961DE /* Build configuration list for PBXProject "ULTIMATE PDF VIEWER" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12F9B50219D1439600B961DE;
+			productRefGroup = 12F9B50C19D1439600B961DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12F9B50A19D1439600B961DE /* ULTIMATE PDF VIEWER */,
+				12F9B52B19D1439700B961DE /* ULTIMATE PDF VIEWERTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12F9B50919D1439600B961DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F9B51919D1439700B961DE /* InfoPlist.strings in Resources */,
+				12F9B52719D1439700B961DE /* Images.xcassets in Resources */,
+				12F9B51F19D1439700B961DE /* Credits.rtf in Resources */,
+				12F9B52519D1439700B961DE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F9B52A19D1439700B961DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F9B53719D1439700B961DE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12F9B50719D1439600B961DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F9B51B19D1439700B961DE /* main.m in Sources */,
+				12F9B52219D1439700B961DE /* NSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F9B52819D1439700B961DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F9B53919D1439700B961DE /* Assignment_2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12F9B53119D1439700B961DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12F9B50A19D1439600B961DE /* ULTIMATE PDF VIEWER */;
+			targetProxy = 12F9B53019D1439700B961DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12F9B51719D1439700B961DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12F9B51819D1439700B961DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		12F9B51D19D1439700B961DE /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12F9B51E19D1439700B961DE /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		12F9B52319D1439700B961DE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12F9B52419D1439700B961DE /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		12F9B53519D1439700B961DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12F9B53619D1439700B961DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12F9B53A19D1439700B961DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		12F9B53B19D1439700B961DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		12F9B53D19D1439700B961DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Assignment 2/ULTIMATE PDF VIEWER-Prefix.pch";
+				INFOPLIST_FILE = "Assignment 2/ULTIMATE PDF VIEWER-Info.plist";
+				PRODUCT_NAME = "ULTIMATE PDF VIEWER";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		12F9B53E19D1439700B961DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Assignment 2/ULTIMATE PDF VIEWER-Prefix.pch";
+				INFOPLIST_FILE = "Assignment 2/ULTIMATE PDF VIEWER-Info.plist";
+				PRODUCT_NAME = "ULTIMATE PDF VIEWER";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		12F9B54019D1439700B961DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Assignment 2.app/Contents/MacOS/Assignment 2";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Assignment 2/Assignment 2-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Assignment 2Tests/ULTIMATE PDF VIEWERTests-Info.plist";
+				PRODUCT_NAME = "ULTIMATE PDF VIEWERTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		12F9B54119D1439700B961DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Assignment 2.app/Contents/MacOS/Assignment 2";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Assignment 2/Assignment 2-Prefix.pch";
+				INFOPLIST_FILE = "Assignment 2Tests/ULTIMATE PDF VIEWERTests-Info.plist";
+				PRODUCT_NAME = "ULTIMATE PDF VIEWERTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12F9B50619D1439600B961DE /* Build configuration list for PBXProject "ULTIMATE PDF VIEWER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F9B53A19D1439700B961DE /* Debug */,
+				12F9B53B19D1439700B961DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12F9B53C19D1439700B961DE /* Build configuration list for PBXNativeTarget "ULTIMATE PDF VIEWER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F9B53D19D1439700B961DE /* Debug */,
+				12F9B53E19D1439700B961DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12F9B53F19D1439700B961DE /* Build configuration list for PBXNativeTarget "ULTIMATE PDF VIEWERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F9B54019D1439700B961DE /* Debug */,
+				12F9B54119D1439700B961DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12F9B50319D1439600B961DE /* Project object */;
+}

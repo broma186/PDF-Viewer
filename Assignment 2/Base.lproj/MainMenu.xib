@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
+        <plugIn identifier="com.apple.pdfkit.ibplugin" version="5053"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customObject id="Voe-Tx-rLC" customClass="NSAppDelegate">
+            <connections>
+                <outlet property="aboutWindow" destination="J1b-1L-AMA" id="zym-kL-gIM"/>
+                <outlet property="backButton" destination="4VQ-X3-gUo" id="UA7-e1-Siq"/>
+                <outlet property="fitButton" destination="K9M-oN-DtG" id="yCf-Wu-vCO"/>
+                <outlet property="forwardButton" destination="9eu-yg-Jyh" id="L7H-3y-3ob"/>
+                <outlet property="goBack" destination="4VQ-X3-gUo" id="wws-09-POr"/>
+                <outlet property="goButton" destination="HsG-l2-Crd" id="bdV-If-J4k"/>
+                <outlet property="jumpTextField" destination="lkH-3q-8cj" id="ahm-Nl-Yro"/>
+                <outlet property="nextDocButton" destination="gaa-dL-2Uz" id="vFk-ok-Qkq"/>
+                <outlet property="nextPage" destination="x3R-5y-HGh" id="gHI-qi-G5B"/>
+                <outlet property="nextPageButton" destination="x3R-5y-HGh" id="5R0-lC-XOu"/>
+                <outlet property="notesTextField" destination="dJ0-d9-uEb" id="LOU-fh-B3c"/>
+                <outlet property="notesWindow" destination="Ron-BK-iUC" id="G4s-L2-5av"/>
+                <outlet property="page" destination="PHe-Ms-Gah" id="YNe-zm-64C"/>
+                <outlet property="pageScroller" destination="KNz-ON-2wm" id="dDW-Gf-8gv"/>
+                <outlet property="pdfView" destination="PHe-Ms-Gah" id="BX3-T1-lhH"/>
+                <outlet property="prevDocButton" destination="v42-rt-1Mr" id="4ng-cU-hmu"/>
+                <outlet property="previousPage" destination="Luy-KX-p5I" id="CU9-FA-38p"/>
+                <outlet property="previousPageButton" destination="Luy-KX-p5I" id="9eM-HI-7XK"/>
+                <outlet property="showNotesButton" destination="sOV-d1-rAF" id="dZH-7R-MQW"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="p9e-P5-gGa"/>
+                <outlet property="zoomInButton" destination="fb1-8f-bhL" id="aVd-6X-mit"/>
+                <outlet property="zoomOutButton" destination="haF-od-rdE" id="hh9-VL-sMb"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="ULTIMATE PDF VIEWER" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="ULTIMATE PDF VIEWER" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="About ULTIMATE PDF VIEWER" id="5kV-Vb-QxS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="displayAboutInfo:" target="Voe-Tx-rLC" id="bT2-Xe-psT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                            <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                            <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                            <menuItem title="Services" id="NMo-om-nkz">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                            <menuItem title="Hide ULTIMATE PDF VIEWER" keyEquivalent="h" id="Olw-nP-bQN">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="Kd2-mp-pUS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                            <menuItem title="Quit ULTIMATE PDF VIEWER" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="File" id="dMs-cI-mzQ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="File" id="bib-Uj-vzu">
+                        <items>
+                            <menuItem title="Open…" keyEquivalent="o" id="IAo-SY-fd9">
+                                <connections>
+                                    <action selector="openPDF:" target="Voe-Tx-rLC" id="gs1-zC-KE6"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
+                            <menuItem title="Close" keyEquivalent="w" id="DVo-aG-piG">
+                                <connections>
+                                    <action selector="performClose:" target="-1" id="HmO-Ls-i7Q"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="aJh-i4-bef"/>
+                            <menuItem title="Page Setup…" keyEquivalent="P" id="qIS-W8-SiK">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="runPageLayout:" target="-1" id="Din-rz-gC5"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Print…" keyEquivalent="p" id="aTl-1u-JFS">
+                                <connections>
+                                    <action selector="print:" target="-1" id="qaZ-4w-aoO"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Navigate" id="0L3-xJ-3k3">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Navigate" id="6nZ-VV-WMv">
+                        <items>
+                            <menuItem title="Back" id="BYe-PO-BpF">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="goBack:" target="Voe-Tx-rLC" id="7lX-nU-fyt"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Forward" id="S6w-6f-oHX">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="goForward:" target="Voe-Tx-rLC" id="yi8-5W-Z3e"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Previous Document" id="Ll6-L1-Cts">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="previousDocument:" target="Voe-Tx-rLC" id="IRO-4L-crx"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Next Document" id="8mi-9O-FMj">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="nextDocument:" target="Voe-Tx-rLC" id="WMB-jT-5Z1"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Previous Page" id="PXf-p5-dSP">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="previousPage:" target="Voe-Tx-rLC" id="JCX-F8-I4w"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Next Page" id="THd-IM-bJa">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="nextPage:" target="Voe-Tx-rLC" id="FY0-OI-4x6"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Zoom" id="QEA-Tp-LCd">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Zoom" id="1Zu-PP-4gJ">
+                        <items>
+                            <menuItem title="In" id="5Tj-Nu-sU5">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="zoomIn:" target="Voe-Tx-rLC" id="GzQ-57-ANZ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Out" id="SOc-VM-9M8">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="zoomOut:" target="Voe-Tx-rLC" id="2hA-v3-bsQ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="To Fit" id="NW4-Nh-cWl">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="zoomToFit:" target="Voe-Tx-rLC" id="f5J-ZV-ABX"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="ULTIMATE PDF VIEWER" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="723" height="611"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="723" height="611"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <pdfView autoresizesSubviews="NO" wantsLayer="YES" id="PHe-Ms-Gah">
+                        <rect key="frame" x="5" y="102" width="601" height="490"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </pdfView>
+                    <button id="x3R-5y-HGh">
+                        <rect key="frame" x="625" y="51" width="94" height="46"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="bevel" title="Next Page" bezelStyle="regularSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nKV-PP-Hn1">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system" size="10"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="nextPage:" target="Voe-Tx-rLC" id="BGt-cI-6Gz"/>
+                        </connections>
+                    </button>
+                    <button id="Luy-KX-p5I">
+                        <rect key="frame" x="3" y="51" width="96" height="45"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="bevel" title="Previous Page" bezelStyle="regularSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pLG-Qz-u6n">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system" size="10"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="previousPage:" target="Voe-Tx-rLC" id="KKY-ZQ-VqE"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="lkH-3q-8cj">
+                        <rect key="frame" x="105" y="63" width="121" height="27"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="42m-U6-ExC">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="jumpToPage:" target="Voe-Tx-rLC" id="OKe-hB-F3h"/>
+                        </connections>
+                    </textField>
+                    <button id="HsG-l2-Crd">
+                        <rect key="frame" x="232" y="59" width="40" height="34"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="bevel" title="Go" bezelStyle="regularSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="64g-zK-OqI">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system" size="10"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="jumpToPage:" target="Voe-Tx-rLC" id="wkM-Nr-Qk7"/>
+                        </connections>
+                    </button>
+                    <button id="4VQ-X3-gUo">
+                        <rect key="frame" x="125" y="3" width="64" height="48"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="bevel" title="Back" bezelStyle="regularSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Efk-W0-WEr">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system" size="10"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="goBack:" target="Voe-Tx-rLC" id="DVS-jD-RJD"/>
+                        </connections>
+                    </button>
+                    <button id="9eu-yg-Jyh">
+                        <rect key="frame" x="531" y="3" width="64" height="48"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="bevel" title="Forward" bezelStyle="regularSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="60r-6u-9zD">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system" size="10"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="goForward:" target="Voe-Tx-rLC" id="xLl-vT-y7D"/>
+                        </connections>
+                    </button>
+                    <button id="gaa-dL-2Uz">
+                        <rect key="frame" x="599" y="3" width="120" height="48"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="bevel" title="Next Document" bezelStyle="regularSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qVI-7h-hO8">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system" size="10"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="nextDocument:" target="Voe-Tx-rLC" id="bY8-BF-FoH"/>
+                        </connections>
+                    </button>
+                    <button id="v42-rt-1Mr">
+                        <rect key="frame" x="3" y="3" width="118" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="bevel" title="Previous Document" bezelStyle="regularSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hw2-aI-VVj">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system" size="10"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="previousDocument:" target="Voe-Tx-rLC" id="vdu-YZ-42b"/>
+                        </connections>
+                    </button>
+                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" id="fb1-8f-bhL">
+                        <rect key="frame" x="336" y="59" width="39" height="38"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="round" title="+" bezelStyle="circular" imagePosition="above" alignment="center" borderStyle="border" imageScaling="proportionallyDown" id="kQO-cf-pN5">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="label"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="zoomIn:" target="Voe-Tx-rLC" id="GKE-x3-xpv"/>
+                        </connections>
+                    </button>
+                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" id="haF-od-rdE">
+                        <rect key="frame" x="295" y="59" width="39" height="38"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="round" title="-" bezelStyle="circular" imagePosition="above" alignment="center" borderStyle="border" imageScaling="proportionallyDown" id="VGj-3V-OGg">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="label"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="zoomOut:" target="Voe-Tx-rLC" id="Wd0-f0-e7L"/>
+                        </connections>
+                    </button>
+                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" id="K9M-oN-DtG">
+                        <rect key="frame" x="315" y="25" width="39" height="38"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="round" title="Fit" bezelStyle="circular" imagePosition="above" alignment="center" borderStyle="border" imageScaling="proportionallyDown" id="dMj-fe-Cdo">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="label"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="zoomToFit:" target="Voe-Tx-rLC" id="PKF-5l-j3i"/>
+                        </connections>
+                    </button>
+                    <pdfThumbnailView id="KNz-ON-2wm">
+                        <rect key="frame" x="608" y="101" width="109" height="490"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                        <size key="thumbnailSize" width="64" height="64"/>
+                        <connections>
+                            <outlet property="pdfView" destination="PHe-Ms-Gah" id="nED-8E-aUY"/>
+                        </connections>
+                    </pdfThumbnailView>
+                    <button verticalHuggingPriority="750" id="sOV-d1-rAF">
+                        <rect key="frame" x="360" y="7" width="137" height="43"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="smallSquare" title="Show Notes" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0w1-dT-rbX">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system" size="10"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="displayNotes:" target="Voe-Tx-rLC" id="oHE-mA-3bw"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+        </window>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="J1b-1L-AMA">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="207" width="491" height="649"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <view key="contentView" id="rgl-oh-JsJ">
+                <rect key="frame" x="0.0" y="0.0" width="491" height="649"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" id="AIK-Nc-SZ7">
+                        <rect key="frame" x="18" y="20" width="455" height="609"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" id="Yqh-i2-nH7">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">ULTIMATE PDF VIEWER
+
+3/10/14
+
+VERSION: 1.0.0
+
+Developed by Matthew Brooker
+Student I.D: 541670
+Student Mail: mbrooker@cs.otago.ac.nz
+
+ULTIMATE PDF VIEWER is a new application developed solely for
+*ultimate* PDF viewing.
+
+Simply open one or more (as many as you desire) PDF file(s)
+by running the program and selecting;
+
+     File -&gt; Open
+
+then select a folder with PDFs or many PDF files (hold down
+SHIFT when selecting them).
+
+Buttons and the Navigate menu bar allow the user to:
+
+- Move through the various selected documents using the Next
+   Document and previous document button.
+- Go to the next page or previous page using the associated buttons.
+- Go back to last page viewed or forward to the other page using the
+   associated buttons.
+
+The user can use the +, - and fit buttons to zoom in, zoom out and
+zoom to fit the current document or do the same by accessing the
+zoom menu.
+</string>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="Ron-BK-iUC">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="207" width="480" height="302"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <view key="contentView" id="ZPY-fD-3Lv">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="302"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="dJ0-d9-uEb">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="302"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="LUP-Yy-yA8">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+        <menuItem title="Speech" id="xrE-MZ-jX0">
+            <modifierMask key="keyEquivalentModifierMask"/>
+            <menu key="submenu" title="Speech" id="3rS-ZA-NoH">
+                <items>
+                    <menuItem title="Start Speaking" id="Ynk-f8-cLZ">
+                        <modifierMask key="keyEquivalentModifierMask"/>
+                    </menuItem>
+                    <menuItem title="Stop Speaking" id="Oyz-dy-DGm">
+                        <modifierMask key="keyEquivalentModifierMask"/>
+                        <connections>
+                            <action selector="stopSpeaking:" target="-1" id="dX8-6p-jy9"/>
+                        </connections>
+                    </menuItem>
+                </items>
+            </menu>
+        </menuItem>
+    </objects>
+</document>
